@@ -1,1 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<project name="vier-gewinnt" basedir="." default="main">
+	<property name="dir.target" value="target"/>
+	<property name="dir.classes" value="${dir.target}/classes"/>
+	<property name="dir.main" value="${dir.classes}/main"/>
+	<property name="dir.test" value="${dir.classes}/test"/>
+	<property name="" value=""/>
+	<property name="dir.jar" value="${dir.target}/jar"/>
+	
+	<target name="clean">
+		<delete dir="${dir.target}" />
+	</target>
+	
+	<target name="compile" depends="test">
+		<mkdir dir="${dir.main}" />
+		
+	</target>
+	
+	<target name="jar" depends="compile">
+		<mkdir dir="${dir.jar}" />
+	</target>
+	
+	<target name="run" depends="jar">
+	
+	</target>
+	
+	<target name="test" depends="clean">
+		<mkdir dir="${dir.test}"/>
+	</target>
+	
+	<target name="main" depends="run">
+	
+	</target>
+</project>

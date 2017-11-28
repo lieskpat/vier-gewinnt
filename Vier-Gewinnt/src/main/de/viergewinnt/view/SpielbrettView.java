@@ -23,7 +23,7 @@ import de.viergewinnt.model.ISpielbrettZelle;
  */
 public class SpielbrettView extends FXMLView implements Observer {
 
-	private final static String SPIELERBRETTVIEW_PATH = "/view/SpielbrettView.fxml";
+	private final static String SPIELERBRETTVIEW_PATH = "/de/viergewinnt/view/SpielbrettView.fxml";
 
 	@FXML
 	private GridPane spielbrettGridPane;

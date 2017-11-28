@@ -14,7 +14,7 @@ import javafx.scene.layout.GridPane;
  */
 public class MainView extends FXMLView {
 
-	private static final String MAINVIEW_PATH = "/view/MainView.fxml";
+	private static final String MAINVIEW_PATH = "/de/viergewinnt/view/MainView.fxml";
 
 	private MainViewModel mainViewModel;
 

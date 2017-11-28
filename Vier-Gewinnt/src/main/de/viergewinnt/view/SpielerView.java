@@ -14,7 +14,7 @@ import de.viergewinnt.model.Farbe;
  */
 public class SpielerView extends FXMLView {
 
-	private final static String SPIELERVIEW_PATH = "/view/SpielerView.fxml";
+	private final static String SPIELERVIEW_PATH = "/de/viergewinnt/view/SpielerView.fxml";
 
 	@FXML
 	private Label spielerNameLabel;
