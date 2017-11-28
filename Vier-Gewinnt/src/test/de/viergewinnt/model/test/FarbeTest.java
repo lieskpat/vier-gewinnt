@@ -6,7 +6,7 @@ package de.viergewinnt.model.test;
 import org.junit.Test;
 
 import junit.framework.TestCase;
-import viergewinnt.core.model.Farbe;
+import de.viergewinnt.model.Farbe;
 
 /**
  * @author lies

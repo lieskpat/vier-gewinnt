@@ -3,8 +3,8 @@
  */
 package de.viergewinnt.model.test;
 
-import viergewinnt.core.model.ISpalte;
-import viergewinnt.core.model.ISpielstein;
+import de.viergewinnt.model.ISpalte;
+import de.viergewinnt.model.ISpielstein;
 
 /**
  * @author lies

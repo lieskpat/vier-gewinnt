@@ -8,10 +8,10 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import viergewinnt.core.model.Farbe;
-import viergewinnt.core.model.ISpieler;
-import viergewinnt.core.model.Spieler;
-import viergewinnt.core.model.Spielstein;
+import de.viergewinnt.model.Farbe;
+import de.viergewinnt.model.ISpieler;
+import de.viergewinnt.model.Spieler;
+import de.viergewinnt.model.Spielstein;
 
 public class SpielerTest {
 	

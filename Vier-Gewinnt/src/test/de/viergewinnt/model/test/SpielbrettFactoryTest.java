@@ -10,17 +10,17 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import viergewinnt.core.model.Diagonale;
-import viergewinnt.core.model.DiagonaleRichtung;
-import viergewinnt.core.model.ISpielbrettZelle;
-import viergewinnt.core.model.ISpielbrettZelleFactory;
-import viergewinnt.core.model.Linie;
-import viergewinnt.core.model.Reihe;
-import viergewinnt.core.model.Spalte;
-import viergewinnt.core.model.Spielbrett;
-import viergewinnt.core.model.SpielbrettFactory;
-import viergewinnt.core.model.SpielbrettZelleFactory;
-import viergewinnt.core.model.ZellenTyp;
+import de.viergewinnt.model.Diagonale;
+import de.viergewinnt.model.DiagonaleRichtung;
+import de.viergewinnt.model.ISpielbrettZelle;
+import de.viergewinnt.model.ISpielbrettZelleFactory;
+import de.viergewinnt.model.Linie;
+import de.viergewinnt.model.Reihe;
+import de.viergewinnt.model.Spalte;
+import de.viergewinnt.model.Spielbrett;
+import de.viergewinnt.model.SpielbrettFactory;
+import de.viergewinnt.model.SpielbrettZelleFactory;
+import de.viergewinnt.model.ZellenTyp;
 
 /**
  * @author lies

@@ -5,8 +5,8 @@ package de.viergewinnt.model.test;
 
 import java.util.List;
 
-import viergewinnt.core.model.ISpielbrettZelle;
-import viergewinnt.core.model.Linie;
+import de.viergewinnt.model.ISpielbrettZelle;
+import de.viergewinnt.model.Linie;
 
 /**
  * @author lies

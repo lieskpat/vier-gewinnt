@@ -8,11 +8,11 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import viergewinnt.core.model.Farbe;
-import viergewinnt.core.model.ISpielbrettZelle;
-import viergewinnt.core.model.SpielbrettZelle;
-import viergewinnt.core.model.Spielstein;
-import viergewinnt.core.model.ZellenTyp;
+import de.viergewinnt.model.Farbe;
+import de.viergewinnt.model.ISpielbrettZelle;
+import de.viergewinnt.model.SpielbrettZelle;
+import de.viergewinnt.model.Spielstein;
+import de.viergewinnt.model.ZellenTyp;
 
 /**
  * @author lies
