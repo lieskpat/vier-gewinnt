@@ -13,19 +13,19 @@ import org.junit.Test;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import viergewinnt.core.model.Farbe;
-import viergewinnt.core.model.ISpalte;
-import viergewinnt.core.model.ISpielbrettZelleFactory;
-import viergewinnt.core.model.Spielbrett;
-import viergewinnt.core.model.SpielbrettFactory;
-import viergewinnt.core.model.SpielbrettZelleFactory;
-import viergewinnt.core.model.Spieler;
-import viergewinnt.core.model.Spielstein;
-import view.IMainViewModel;
-import view.MainViewModel;
-import view.SpalteCommand;
-import view.SpielbrettViewModel;
-import view.SpielerViewModel;
+import de.viergewinnt.model.Farbe;
+import de.viergewinnt.model.ISpalte;
+import de.viergewinnt.model.ISpielbrettZelleFactory;
+import de.viergewinnt.model.Spielbrett;
+import de.viergewinnt.model.SpielbrettFactory;
+import de.viergewinnt.model.SpielbrettZelleFactory;
+import de.viergewinnt.model.Spieler;
+import de.viergewinnt.model.Spielstein;
+import de.viergewinnt.view.IMainViewModel;
+import de.viergewinnt.view.MainViewModel;
+import de.viergewinnt.view.SpalteCommand;
+import de.viergewinnt.view.SpielbrettViewModel;
+import de.viergewinnt.view.SpielerViewModel;
 
 /**
  * @author lies

@@ -10,14 +10,14 @@ import org.junit.Before;
 import org.junit.Test;
 
 import junit.framework.TestCase;
-import viergewinnt.core.model.ISpalte;
-import viergewinnt.core.model.Spielbrett;
-import viergewinnt.core.model.SpielbrettFactory;
-import viergewinnt.core.model.SpielbrettZelleFactory;
-import view.IMainViewModel;
-import view.ISpielbrettViewModel;
-import view.SpalteCommand;
-import view.SpielerViewModel;
+import de.viergewinnt.model.ISpalte;
+import de.viergewinnt.model.Spielbrett;
+import de.viergewinnt.model.SpielbrettFactory;
+import de.viergewinnt.model.SpielbrettZelleFactory;
+import de.viergewinnt.view.IMainViewModel;
+import de.viergewinnt.view.ISpielbrettViewModel;
+import de.viergewinnt.view.SpalteCommand;
+import de.viergewinnt.view.SpielerViewModel;
 
 /**
  * @author lies

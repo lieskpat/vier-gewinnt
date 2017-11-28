@@ -5,9 +5,9 @@ package de.viergewinnt.view.test;
 
 import java.util.List;
 
-import viergewinnt.core.model.Spielbrett;
-import view.ISpielbrettViewModel;
-import view.SpalteCommand;
+import de.viergewinnt.model.Spielbrett;
+import de.viergewinnt.view.ISpielbrettViewModel;
+import de.viergewinnt.view.SpalteCommand;
 
 /**
  * @author lies

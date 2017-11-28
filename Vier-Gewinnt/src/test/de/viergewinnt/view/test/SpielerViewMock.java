@@ -5,7 +5,7 @@ package de.viergewinnt.view.test;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import view.ISpielerViewModel;
+import de.viergewinnt.view.ISpielerViewModel;
 
 /**
  * @author lies

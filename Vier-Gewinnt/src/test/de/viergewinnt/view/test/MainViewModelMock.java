@@ -5,10 +5,10 @@ package de.viergewinnt.view.test;
 
 import java.util.List;
 
-import viergewinnt.core.model.ISpalte;
-import view.IMainViewModel;
-import view.ISpielbrettViewModel;
-import view.SpielerViewModel;
+import de.viergewinnt.model.ISpalte;
+import de.viergewinnt.view.IMainViewModel;
+import de.viergewinnt.view.ISpielbrettViewModel;
+import de.viergewinnt.view.SpielerViewModel;
 
 /**
  * @author lies

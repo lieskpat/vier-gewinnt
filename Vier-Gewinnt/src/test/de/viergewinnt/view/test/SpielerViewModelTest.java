@@ -10,10 +10,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 import junit.framework.TestCase;
-import viergewinnt.core.model.Farbe;
-import viergewinnt.core.model.Spieler;
-import viergewinnt.core.model.Spielstein;
-import view.SpielerViewModel;
+import de.viergewinnt.model.Farbe;
+import de.viergewinnt.model.Spieler;
+import de.viergewinnt.model.Spielstein;
+import de.viergewinnt.view.SpielerViewModel;
 
 /**
  * @author lies
