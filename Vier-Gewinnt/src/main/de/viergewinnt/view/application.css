@@ -1,0 +1,11 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.gameboard {
+	-fx-background-fills: black, white;
+	-fx-background-insets: 0, 1 ;
+}
+
+.pane {
+	-fx-border-insets: 1;
+	-fx-border-color: black
+}
