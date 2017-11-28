@@ -8,19 +8,19 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import viergewinnt.core.model.Farbe;
-import viergewinnt.core.model.ISpalte;
-import viergewinnt.core.model.ISpielbrettZelleFactory;
-import viergewinnt.core.model.Spielbrett;
-import viergewinnt.core.model.SpielbrettFactory;
-import viergewinnt.core.model.Spieler;
-import viergewinnt.core.model.Spielstein;
-import view.MainView;
-import view.MainViewModel;
-import view.SpalteCommand;
-import view.SpielbrettViewModel;
-import view.SpielbrettZelleNotificationDecoratorFactory;
-import view.SpielerViewModel;
+import de.viergewinnt.model.Farbe;
+import de.viergewinnt.model.ISpalte;
+import de.viergewinnt.model.ISpielbrettZelleFactory;
+import de.viergewinnt.model.Spielbrett;
+import de.viergewinnt.model.SpielbrettFactory;
+import de.viergewinnt.model.Spieler;
+import de.viergewinnt.model.Spielstein;
+import de.viergewinnt.view.MainView;
+import de.viergewinnt.view.MainViewModel;
+import de.viergewinnt.view.SpalteCommand;
+import de.viergewinnt.view.SpielbrettViewModel;
+import de.viergewinnt.view.SpielbrettZelleNotificationDecoratorFactory;
+import de.viergewinnt.view.SpielerViewModel;
 
 public class Main extends Application {
 
