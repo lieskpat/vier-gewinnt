@@ -47,7 +47,7 @@ public class SpielbrettFactory implements ISpielbrettFactory {
 			Spalte spalte = new Spalte(spielbrettZelle, i);
 			spalteList.add(spalte);
 
-			// Spalten müssen unten anfangen, da sonst view des Spielbretts
+			// Spalten muessen unten anfangen, da sonst view des Spielbretts
 			// inkorrekt
 			for (int j = anzahlReihen - 1; j >= 0; j--) {
 				spielbrettZelle.add(zweiDimArray[i][j]);
@@ -153,7 +153,7 @@ public class SpielbrettFactory implements ISpielbrettFactory {
 			}
 		}
 
-		// Gib fertiges Spielbrett zurück
+		// Gib fertiges Spielbrett zurueck
 		return new Spielbrett(zweiDimArray, reiheList, spalteList, diagonaleList);
 	}
 

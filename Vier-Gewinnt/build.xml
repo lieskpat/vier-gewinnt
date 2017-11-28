@@ -4,7 +4,7 @@
 	<property name="dir.classes" value="${dir.target}/classes"/>
 	<property name="dir.main" value="${dir.classes}/main"/>
 	<property name="dir.test" value="${dir.classes}/test"/>
-	<property name="" value=""/>
+	<property name="dir.src" value="src/main"/>
 	<property name="dir.jar" value="${dir.target}/jar"/>
 	
 	<target name="clean">
@@ -13,15 +13,20 @@
 	
 	<target name="compile" depends="test">
 		<mkdir dir="${dir.main}" />
-		
+		<javac srcdir="${dir.src}" destdir="${dir.main}" includeantruntime="false" />
 	</target>
 	
 	<target name="jar" depends="compile">
 		<mkdir dir="${dir.jar}" />
+		<jar destfile="${dir.jar}/VierGewinnt.jar" basedir="${dir.main}">
+			<manifest>
+				<attribute name="Main-Class" value="de.viergewinnt.application.Main" />
+			</manifest>
+		</jar>
 	</target>
 	
 	<target name="run" depends="jar">
-	
+		<java jar="${dir.jar}/VierGewinnt.jar" fork="true" />
 	</target>
 	
 	<target name="test" depends="clean">

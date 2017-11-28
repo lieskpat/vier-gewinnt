@@ -84,7 +84,7 @@ public class SpielbrettViewModel implements ISpielbrettViewModel {
 		int x = ((ISpielbrettZelle) arg).getX();
 		int y = ((ISpielbrettZelle) arg).getY();
 		ZellenTyp typ = (ZellenTyp) ((ISpielbrettZelle) arg).getZellenTyp();
-		System.out.println("X: " + x + " Y: " + y + " ZellenTyp: " + typ.toString() + " hat sich geändert");
+		System.out.println("X: " + x + " Y: " + y + " ZellenTyp: " + typ.toString() + " hat sich geaendert");
 		Farbe spielsteinFarbe = getSpielbrettZelleFromSpielbrett(x, y).getSpielstein().getFarbe();
 		Circle circle = new Circle(20.0,
 				Color.rgb(spielsteinFarbe.getRot(), spielsteinFarbe.getGruen(), spielsteinFarbe.getBlau()));
