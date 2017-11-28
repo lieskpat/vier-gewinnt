@@ -3,10 +3,10 @@
  */
 package de.viergewinnt.view;
 
-import viergewinnt.core.model.ISpielbrettZelle;
-import viergewinnt.core.model.ISpielbrettZelleFactory;
-import viergewinnt.core.model.SpielbrettZelle;
-import viergewinnt.core.model.ZellenTyp;
+import de.viergewinnt.model.ISpielbrettZelle;
+import de.viergewinnt.model.ISpielbrettZelleFactory;
+import de.viergewinnt.model.SpielbrettZelle;
+import de.viergewinnt.model.ZellenTyp;
 
 /**
  * @author lies

@@ -6,8 +6,8 @@ package de.viergewinnt.view;
 import java.util.ArrayList;
 import java.util.List;
 
-import viergewinnt.core.model.ISpalte;
-import viergewinnt.core.model.Linie;
+import de.viergewinnt.model.ISpalte;
+import de.viergewinnt.model.Linie;
 
 /**
  * @author lies

@@ -13,10 +13,10 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import viergewinnt.core.model.Farbe;
-import viergewinnt.core.model.ISpielbrettZelle;
-import viergewinnt.core.model.Spielbrett;
-import viergewinnt.core.model.ZellenTyp;
+import de.viergewinnt.model.Farbe;
+import de.viergewinnt.model.ISpielbrettZelle;
+import de.viergewinnt.model.Spielbrett;
+import de.viergewinnt.model.ZellenTyp;
 
 /**
  * @author lies

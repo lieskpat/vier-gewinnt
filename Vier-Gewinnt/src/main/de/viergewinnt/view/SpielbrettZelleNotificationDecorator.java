@@ -5,9 +5,9 @@ package de.viergewinnt.view;
 
 import java.util.Observable;
 
-import viergewinnt.core.model.ISpielbrettZelle;
-import viergewinnt.core.model.ISpielstein;
-import viergewinnt.core.model.IZellenTyp;
+import de.viergewinnt.model.ISpielbrettZelle;
+import de.viergewinnt.model.ISpielstein;
+import de.viergewinnt.model.IZellenTyp;
 
 /**
  * @author lies

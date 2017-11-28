@@ -2,7 +2,7 @@ package de.viergewinnt.view;
 
 import java.util.List;
 
-import viergewinnt.core.model.Spielbrett;
+import de.viergewinnt.model.Spielbrett;
 
 public interface ISpielbrettViewModel {
 

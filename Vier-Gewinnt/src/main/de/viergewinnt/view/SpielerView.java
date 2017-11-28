@@ -6,7 +6,7 @@ package de.viergewinnt.view;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
-import viergewinnt.core.model.Farbe;
+import de.viergewinnt.model.Farbe;
 
 /**
  * @author lies

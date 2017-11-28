@@ -9,8 +9,8 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
-import viergewinnt.core.model.ISpieler;
-import viergewinnt.core.model.Spielstein;
+import de.viergewinnt.model.ISpieler;
+import de.viergewinnt.model.Spielstein;
 
 /**
  * @author lies

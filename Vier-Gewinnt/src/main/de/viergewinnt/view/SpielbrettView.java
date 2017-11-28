@@ -15,7 +15,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
-import viergewinnt.core.model.ISpielbrettZelle;
+import de.viergewinnt.model.ISpielbrettZelle;
 
 /**
  * @author lies

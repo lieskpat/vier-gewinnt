@@ -5,7 +5,7 @@ package de.viergewinnt.view;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
-import viergewinnt.core.model.ISpalte;
+import de.viergewinnt.model.ISpalte;
 
 /**
  * @author lies

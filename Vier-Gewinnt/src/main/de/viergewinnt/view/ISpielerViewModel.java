@@ -1,6 +1,6 @@
 package de.viergewinnt.view;
 
-import viergewinnt.core.model.ISpieler;
+import de.viergewinnt.model.ISpieler;
 
 public interface ISpielerViewModel {
 

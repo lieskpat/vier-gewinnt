@@ -2,7 +2,7 @@ package de.viergewinnt.view;
 
 import java.util.List;
 
-import viergewinnt.core.model.ISpalte;
+import de.viergewinnt.model.ISpalte;
 
 public interface IMainViewModel {
 
