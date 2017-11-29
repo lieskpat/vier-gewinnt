@@ -8,11 +8,20 @@
 	<property name="dir.test" value="${dir.classes}/test" />
 	<property name="dir.src" value="src/main" />
 	<property name="dir.jar" value="${dir.target}/jar" />
+	
+	<!-- sonarQube properties -->
+	<property name="sonar.projectKey" value="org.sonarqube:sonarqube-scanner-ant" />
+	<property name="sonar.projectName" value="Vier Gewinnt sonarQube" />
+	<property name="sonar.projectVersion" value="1.0" />
+	<property name="sonar.language" value="java" />
+	<property name="sonar.sources" value="${dir.src}" />
+	<property name="sonar.java.binaries" value="${dir.main}" />
+	<property name="sonar.sourceEncoding" value="UTF-8" />
 
 	<!-- Initialisiere JavaFX Tags-->
 	<target name="init-fx">
 		<taskdef resource="com/sun/javafx/tools/ant/antlib.xml" uri="javafx:com.sun.javafx.tools.ant" 
-			classpath="C:\Program Files\Java\jdk1.8.0_152\lib\ant-javafx.jar" />
+			classpath="C:\Program Files\Java\jdk1.8.0_121\lib\ant-javafx.jar" />
 	</target>
 
 	<!-- Lösche target Ordner und Unterordner-->
@@ -42,7 +51,7 @@
 	</target>
 
 	<!-- starte Programm (jar file)-->
-	<target name="run" depends="jar">
+	<target name="run" depends="jar, sonarQube">
 		<java jar="${dir.jar}/VierGewinnt.jar" fork="true" />
 	</target>
 
@@ -54,13 +63,12 @@
 	<!-- verwende SonarQube zur Codecontrolle-->
 	<target name="sonarQube">
 	    <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
-	        <!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
-	        <classpath path="path/to/sonar/ant/task/lib/sonarqube-ant-task-*.jar" />
+	        <classpath path="sonarqube-ant-task-2.5.jar" />
 	    </taskdef>
 	 	<!-- starte sonarQube-->
 	    <sonar:sonar />
 	</target>
 
 	<!-- hier beginnt die Abhängigkeitskette (depends)-->
-	<target name="main" depends="run, sonarQube" />
+	<target name="main" depends="run" />
 </project>
