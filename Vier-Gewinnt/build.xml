@@ -7,41 +7,51 @@
 	<property name="dir.src" value="src/main" />
 	<property name="dir.jar" value="${dir.target}/jar" />
 
+	<!-- Initialisiere JavaFX Tags-->
 	<target name="init-fx">
 		<taskdef resource="com/sun/javafx/tools/ant/antlib.xml" uri="javafx:com.sun.javafx.tools.ant" 
 			classpath="C:\Program Files\Java\jdk1.8.0_152\lib\ant-javafx.jar" />
 	</target>
 
+	<!-- Lösche target Ordner und Unterordner-->
 	<target name="clean" depends="init-fx">
 		<delete dir="${dir.target}" />
 	</target>
 
+	<!-- Compiliere Java Code-->
 	<target name="compile" depends="test">
 		<mkdir dir="${dir.main}" />
 		<javac srcdir="${dir.src}" destdir="${dir.main}" includeantruntime="false" />
 	</target>
 
+	<!-- Erstelle runnable jar-->
 	<target name="jar" depends="compile">
 		<mkdir dir="${dir.jar}" />
+		<!-- kopiere .fxml und .css in target Ordner-->
 		<copy todir="${dir.main}/de/viergewinnt/view/">
 			<fileset file="${dir.src}/de/viergewinnt/view/*.fxml" />
 			<fileset file="${dir.src}/de/viergewinnt/view/*.css" />
 		</copy>
+		<!-- erstelle jar file-->
 		<fx:jar destfile="${dir.jar}/VierGewinnt.jar">
 			<fx:application name="Vier Gewinnt" mainClass="de.viergewinnt.application.Main" />
 			<fileset dir="${dir.main}" />
 		</fx:jar>
 	</target>
 
+	<!-- starte Programm (jar file)-->
 	<target name="run" depends="jar">
 		<java jar="${dir.jar}/VierGewinnt.jar" fork="true" />
 	</target>
 
+	<!-- teste code-->
 	<target name="test" depends="clean">
 		<mkdir dir="${dir.test}" />
 	</target>
 	
+	<!-- verwende SonarQube zur Codecontrolle-->
 	<target name="sonarQube"></target>
 
+	<!-- hier beginnt die Abhängigkeitskette (depends)-->
 	<target name="main" depends="run" />
 </project>
