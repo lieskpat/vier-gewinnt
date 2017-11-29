@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="vier-gewinnt" basedir="." default="main" xmlns:fx="javafx:com.sun.javafx.tools.ant">
+<project name="vier-gewinnt" basedir="." default="main" xmlns:fx="javafx:com.sun.javafx.tools.ant" 
+	xmlns:sonar="antlib:org.sonar.ant">
+	
 	<property name="dir.target" value="target" />
 	<property name="dir.classes" value="${dir.target}/classes" />
 	<property name="dir.main" value="${dir.classes}/main" />
@@ -50,8 +52,15 @@
 	</target>
 	
 	<!-- verwende SonarQube zur Codecontrolle-->
-	<target name="sonarQube"></target>
+	<target name="sonarQube">
+	    <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+	        <!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+	        <classpath path="path/to/sonar/ant/task/lib/sonarqube-ant-task-*.jar" />
+	    </taskdef>
+	 	<!-- starte sonarQube-->
+	    <sonar:sonar />
+	</target>
 
 	<!-- hier beginnt die Abhängigkeitskette (depends)-->
-	<target name="main" depends="run" />
+	<target name="main" depends="run, sonarQube" />
 </project>
