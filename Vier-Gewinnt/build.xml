@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="vier-gewinnt" basedir="." default="main">
+<project name="vier-gewinnt" basedir="." default="main" xmlns:fx="javafx:com.sun.javafx.tools.ant">
 	<property name="dir.target" value="target"/>
 	<property name="dir.classes" value="${dir.target}/classes"/>
 	<property name="dir.main" value="${dir.classes}/main"/>
@@ -7,7 +7,13 @@
 	<property name="dir.src" value="src/main"/>
 	<property name="dir.jar" value="${dir.target}/jar"/>
 	
-	<target name="clean">
+	<target name="init-fx">
+		<taskdef resource="com/sun/javafx/tools/ant/antlib.xml"      
+	    	uri="javafx:com.sun.javafx.tools.ant"
+	    	classpath="C:\Program Files\Java\jdk1.8.0_152\lib\ant-javafx.jar"/>
+	</target>
+	
+	<target name="clean" depends="init-fx">
 		<delete dir="${dir.target}" />
 	</target>
 	
@@ -18,11 +24,29 @@
 	
 	<target name="jar" depends="compile">
 		<mkdir dir="${dir.jar}" />
-		<jar destfile="${dir.jar}/VierGewinnt.jar" basedir="${dir.main}">
+		<!--<jar destfile="${dir.jar}/VierGewinnt.jar" basedir="${dir.main}">
 			<manifest>
 				<attribute name="Main-Class" value="de.viergewinnt.application.Main" />
 			</manifest>
-		</jar>
+		</jar>-->
+		<fx:jar destfile="${dir.jar}/VierGewinnt.jar">
+		    <fx:application name="Vier Gewinnt" mainClass="de.viergewinnt.application.Main"/>
+		 
+		    <!-- Define what auxilary resources are needed
+		    <fx:resources>
+		        <fx:fileset dir="dist" includes="lib/*.jar"/>
+		    </fx:resources>-->
+		            
+		    <!-- What to include into result jar file?
+		         Everything in the build tree -->
+		    <fileset dir="${dir.main}"/>
+		 
+		    <!-- Customize jar manifest (optional)
+		    <manifest>
+		        <attribute name="Implementation-Vendor" value="Samples Team"/>
+		        <attribute name="Implementation-Version" value="1.0"/>
+		    </manifest>-->
+		</fx:jar>   
 	</target>
 	
 	<target name="run" depends="jar">
