@@ -7,6 +7,7 @@ import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import de.viergewinnt.model.ISpieler;
@@ -35,7 +36,7 @@ public class SpielerViewModel implements ISpielerViewModel {
 		spielsteineProperty.set(String.valueOf(spieler.getSpielsteine().size()));
 		spielerIstNichtAnDerReihe.set(!spieler.isIstAnDerReihe());
 		// Verstehe nicht warum cast, eine ObservableList ist eine List
-		ObservableList<Spielstein> list = (ObservableList<Spielstein>) this.spieler.getSpielsteine();
+		ObservableList<Spielstein> list = FXCollections.observableList(this.spieler.getSpielsteine());
 		list.addListener(new ListChangeListener<Spielstein>() {
 
 			@Override
